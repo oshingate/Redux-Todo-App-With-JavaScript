@@ -164,7 +164,7 @@ a {
 }
 
 .btn-pri {
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
   background-color: #30ba67;
   color: white;
@@ -193,38 +193,51 @@ header strong {
   color: #21345e;
 }
 
-.main-sec h1 {
-  font-size: 4rem;
-  font-weight: 900;
+#input {
+  width: 500px;
+  padding: 0.5rem;
 }
 
-.button-sec li {
-  margin: 0 1rem;
-}
-
-.step-sec .each-div {
-  margin: 0 2rem;
-}
-
-.step-sec h2 {
-  font-size: 2rem;
+#input::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1rem;
   font-weight: 700;
-  color: #21345e;
-  margin: 2rem 0;
 }
 
-.step-sec button {
-  padding: 1.5rem;
-  background-color: #21345e;
-  color: white;
-  outline: none;
-  margin: 0 0.5rem;
+#input:-ms-input-placeholder {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#input::-ms-input-placeholder {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#input::placeholder {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.root {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.root > * {
+  margin: 0.5rem 0;
+}
+
+.root .todo {
+  padding: 0.5rem;
+  background-color: #ddd7d7;
   border-radius: 10px;
-  cursor: pointer;
-  border: none;
-}
-
-.step-sec .active {
-  background-color: #5271ff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
