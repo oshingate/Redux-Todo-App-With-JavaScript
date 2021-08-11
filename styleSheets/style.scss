@@ -1,0 +1,49 @@
+@import 'reset';
+
+body {
+  font-size: 20px;
+  background-color: #e7feff;
+}
+$pri: #5271ff;
+$sec: #21345e;
+$green: #30ba67;
+
+.text-center {
+  text-align: center;
+}
+.sec-padding {
+  padding: 3rem 0;
+}
+.flex {
+  display: flex;
+}
+.jsb {
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.btn-pri {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  background-color: $green;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  strong {
+    font-size: 3rem;
+    font-weight: 800;
+    color: $sec;
+  }
+}
