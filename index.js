@@ -38,6 +38,11 @@ function reducer(state, action) {
     case 'isChecked':
       state.data[action.indexOfTodo].isCompleted = action.value;
       return { data: state.data };
+
+    //handle remove todo
+    case 'removeTodo':
+      state.data.splice(action.indexOfTodo, 1);
+      return { data: state.data };
     //default case
     default:
       return { data: [{ isCompleted: false, title: 'hello' }] };
@@ -69,6 +74,13 @@ createUI = (data) => {
     let button = document.createElement('button');
     button.innerText = 'X';
     button.classList.add('btn-pri');
+
+    button.addEventListener('click', () => {
+      store.dispatch({
+        type: 'removeTodo',
+        indexOfTodo: i,
+      });
+    });
 
     singleTodo.append(checkbox, span, button);
     root.append(singleTodo);
